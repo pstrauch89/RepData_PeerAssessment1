@@ -211,8 +211,8 @@ For this part the weekdays() function may be of some help here. Use the dataset 
 # weekends or weekdays
 filled_data$day <- weekdays(as.Date(filled_data$date))
 
-saturday <- grep("sobota", filled_data$day)
-sunday <- grep("nedeľa", filled_data$day)
+saturday <- grep("saturdaya", filled_data$day)
+sunday <- grep("sunday", filled_data$day)
 weekends <- c(saturday, sunday)
 
 filled_data$week <- "weekday"
